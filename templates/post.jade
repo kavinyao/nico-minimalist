@@ -16,3 +16,16 @@ block document
 
         article.entry-content
             != post.html
+
+        #disqus_thread
+
+block body_bottom
+    - if (!post.meta.comment && config.disqus)
+        script
+            var disqus_shortname = '#{config.disqus}';
+            var disqus_script = 'embed.js';
+            (function () {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            }());
