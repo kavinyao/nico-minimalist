@@ -1,0 +1,102 @@
+@import "compass/reset"
+
+$width: 700px
+$black: #555
+$minor_black: #888
+$link_color: #006699
+
+body
+  background-color: #fafafa
+  color: $black
+  font-family: 'Georgia', 'Times New Roman', 'Songti SC', 'STSong', serif
+  font-size: 17px
+  line-height: 24px
+
+  &>.wrapper
+    width: $width
+    margin: 0 auto
+    padding: 20px
+
+  .navigation
+    .home
+      font-size: 2.5em
+      line-height: 1.5em
+
+    .pages
+      list-style-type: none
+      padding-left: 0
+      color: $minor_black
+
+  &>.footer
+    width: $width
+    margin: 0 auto
+    border-top: 1px solid #eee
+    padding: 10px
+    font-size: .8em
+    color: $minor_black
+
+    span
+      margin-right: .5em
+      &:not(:last-child):after
+        content: '|'
+        margin-left: .5em
+
+a
+  text-decoration: none
+  color: inherit
+  &:hover
+    text-decoration: underline
+
+h1
+  font-size: 1.8em
+  line-height: 1.8em
+
+  a
+    color: inherit
+
+h2
+  font-size: 1.5em
+  line-height: 1.5em
+
+h3
+  font-size: 1.25em
+  line-height: 1.25em
+
+ol, ul
+  padding-left: 3em
+
+ol
+  list-style-type: decimal
+
+  &.entry-list
+    li
+      margin-bottom: .2em
+
+ul
+  list-style-type: square
+
+time
+  color: #aaa
+  margin-left: .5em
+
+.entry-content
+  &>*
+    margin: .4em 0
+
+  a
+    color: $link_color
+
+strong
+  font-weight: bold
+
+blockquote, em
+  font-style: italic
+
+pre, code
+  font-family: consolas, menlo, monaco, monospace
+  font-size: .9em
+
+pre
+  padding: .5em
+  border: 1px dotted #787878
+  background-color: #efefef

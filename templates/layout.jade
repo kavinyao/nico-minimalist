@@ -9,6 +9,10 @@ html(lang='en')
         title
             block title
 
+        link(rel='icon', href='/favicon.png')
+        link(rel='stylesheet', href='#{static_url("minimalist.css")}')
+        link(rel='stylesheet', href='#{static_url("syntax.css")}')
+
         - if (config.ga)
             script
                 var _gaq = _gaq || [];
@@ -22,8 +26,8 @@ html(lang='en')
                 })();
 
     body
-        .navigation(role='navigation')
-            .conainer
+        section.wrapper(role='main')
+            .navigation(role='navigation')
                 h1.home
                     a(href='#{content_url("index.html")}') #{config.sitename}
                 //- TODO: hard-coded
@@ -31,13 +35,13 @@ html(lang='en')
                     li
                         a(href='#{content_url("about/")}') About
 
-        .document
-            block document
+            .document
+                block document
 
         .footer
             p.copyright
                 span &copy; 2013 #{config.author}
-                span Powered by
+                span Powered by 
                     a(href='#{system.homepage}') #{system.name}
                 span on 
                     a(href='#{theme.homepage}') #{theme.name}
