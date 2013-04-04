@@ -1,0 +1,15 @@
+extends layout
+
+block title
+    = pagination.title
+
+block document
+    h1.entry-title #{pagination.title}
+
+    ol.entry-list
+        //- set posts in anti-chronological order
+        - items = pagination.items.reverse()
+        - for item in items
+            li
+                a(href='#{permalink_url(item)}') #{item.title}
+                time(datetime='#{item.pubdate.toISOString()}') #{item.pubdate.year}/#{item.pubdate.month}/#{item.pubdate.getDate()}

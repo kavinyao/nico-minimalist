@@ -1,0 +1,11 @@
+extends layout
+
+block title
+    = post.title
+
+block document
+    .hentry
+        h1.entry-title #{post.title}
+
+        article.entry-content
+            != post.html

@@ -1,0 +1,43 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='generator', content='#{system.name} #{system.version}')
+        meta(name='theme', content='#{theme.name} #{theme.version}')
+        meta(name='author', content='#{config.author}')
+
+        title
+            block title
+
+        - if (config.ga)
+            script
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', '#{config.ga}']);
+                _gaq.push(['_trackPageview']);
+                _gaq.push(['_trackPageLoadTime']);
+                (function() {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = 'https://ssl.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+
+    body
+        .navigation(role='navigation')
+            .conainer
+                h1.home
+                    a(href='#{content_url("index.html")}') #{config.sitename}
+                //- TODO: hard-coded
+                ul.pages
+                    li
+                        a(href='#{content_url("about/")}') About
+
+        .document
+            block document
+
+        .footer
+            p.copyright
+                span &copy; 2013 #{config.author}
+                span Powered by
+                    a(href='#{system.homepage}') #{system.name}
+                span on 
+                    a(href='#{theme.homepage}') #{theme.name}
