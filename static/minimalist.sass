@@ -81,7 +81,7 @@ time
 
 .entry-content
   &>*
-    margin: .4em 0
+    margin: 1em 0
 
   a
     color: $link_color
@@ -92,11 +92,10 @@ strong
 blockquote, em
   font-style: italic
 
-pre, code
-  font-family: consolas, menlo, monaco, monospace
-  font-size: .9em
-
+$code_block_bg: #FDF6E3
 pre
-  padding: .5em
-  border: 1px dotted #787878
-  background-color: #efefef
+  font-family: consolas, menlo, monaco, monospace
+  font-size: .8em
+  background-color: $code_block_bg
+  border: 1px solid darken($code_block_bg, 10%)
+  overflow: auto
