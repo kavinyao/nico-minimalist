@@ -17,6 +17,13 @@ block document
         article.entry-content
             != post.html
 
+        - if (post.tags.length)
+            ul.entry-tags Tags:
+                - for tag in post.tags
+                    li
+                        a(href=content_url('tag/#{tag}'))
+                            = tag
+
         #disqus_thread
 
 block body_bottom

@@ -86,6 +86,21 @@ time
   a
     color: $link_color
 
+.entry-tags
+  margin: 1em 0
+  padding-left: 0
+
+  li
+    display: inline-block
+    margin-right: .2em
+
+    &:first-child
+      margin-left: .2em
+
+    &:not(:last-child):after
+      content: '/'
+      margin-left: .2em
+
 strong
   font-weight: bold
 

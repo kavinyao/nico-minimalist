@@ -174,16 +174,36 @@ time {
 }
 
 /* line 89, minimalist.sass */
+.entry-tags {
+  margin: 1em 0;
+  padding-left: 0;
+}
+/* line 93, minimalist.sass */
+.entry-tags li {
+  display: inline-block;
+  margin-right: 0.2em;
+}
+/* line 97, minimalist.sass */
+.entry-tags li:first-child {
+  margin-left: 0.2em;
+}
+/* line 100, minimalist.sass */
+.entry-tags li:not(:last-child):after {
+  content: "/";
+  margin-left: 0.2em;
+}
+
+/* line 104, minimalist.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 92, minimalist.sass */
+/* line 107, minimalist.sass */
 blockquote, em {
   font-style: italic;
 }
 
-/* line 96, minimalist.sass */
+/* line 111, minimalist.sass */
 pre {
   font-family: consolas, menlo, monaco, monospace;
   font-size: 0.8em;
