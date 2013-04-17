@@ -9,7 +9,7 @@ block document
     ol.entry-list
         //- set posts in anti-chronological order
         - items = pagination.items.reverse()
-        - for item in items
+        for item in items
             li
                 a(href='#{permalink_url(item)}') #{item.title}
                 time(datetime='#{item.pubdate.toISOString()}') #{item.pubdate.year}/#{item.pubdate.month}/#{item.pubdate.getDate()}

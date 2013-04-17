@@ -14,7 +14,7 @@ html(lang='en')
         link(rel='stylesheet', href='#{static_url("minimalist.css")}')
         link(rel='stylesheet', href='#{static_url("syntax.css")}')
 
-        - if (config.ga)
+        if (config.ga)
             script
                 var _gaq = _gaq || [];
                 _gaq.push(['_setAccount', '#{config.ga}']);

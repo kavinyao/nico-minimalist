@@ -11,15 +11,15 @@ block document
             span.author #{config.author}
             time.updated(datetime='#{post.pubdate.toISOString()}') #{post.pubdate.year}/#{post.pubdate.month}/#{post.pubdate.getDate()}
 
-        - if (post.description)
+        if (post.description)
             blockquote.entry-description #{post.description}
 
         article.entry-content
             != post.html
 
-        - if (post.tags.length)
+        if (post.tags.length)
             ul.entry-tags Tags:
-                - for tag in post.tags
+                for tag in post.tags
                     li
                         a(href=content_url('tag/#{tag}'))
                             = tag
@@ -27,7 +27,7 @@ block document
         #disqus_thread
 
 block body_bottom
-    - if (!post.meta.comment && config.disqus)
+    if (!post.meta.comment && config.disqus)
         script
             var disqus_shortname = '#{config.disqus}';
             var disqus_script = 'embed.js';
