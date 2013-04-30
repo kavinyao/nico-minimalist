@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 8, minimalist.sass */
+/* line 9, minimalist.sass */
 body {
   background-color: #fafafa;
   color: #555555;
@@ -71,24 +71,24 @@ body {
   font-size: 17px;
   line-height: 24px;
 }
-/* line 15, minimalist.sass */
+/* line 16, minimalist.sass */
 body > .wrapper {
   width: 700px;
   margin: 0 auto;
   padding: 20px;
 }
-/* line 21, minimalist.sass */
+/* line 22, minimalist.sass */
 body .navigation .home {
   font-size: 2.5em;
   line-height: 1.5em;
 }
-/* line 25, minimalist.sass */
+/* line 26, minimalist.sass */
 body .navigation .pages {
   list-style-type: none;
   padding-left: 0;
   color: #888888;
 }
-/* line 30, minimalist.sass */
+/* line 31, minimalist.sass */
 body > .footer {
   width: 700px;
   margin: 0 auto;
@@ -97,113 +97,122 @@ body > .footer {
   font-size: 0.8em;
   color: #888888;
 }
-/* line 38, minimalist.sass */
+/* line 39, minimalist.sass */
 body > .footer span {
   margin-right: 0.5em;
 }
-/* line 40, minimalist.sass */
+/* line 41, minimalist.sass */
 body > .footer span:not(:last-child):after {
   content: "|";
   margin-left: 0.5em;
 }
 
-/* line 44, minimalist.sass */
+@media screen and (max-width: 960px) {
+  /* line 47, minimalist.sass */
+  body > .wrapper, body > .footer {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 51, minimalist.sass */
 a {
   text-decoration: none;
   color: inherit;
 }
-/* line 47, minimalist.sass */
+/* line 54, minimalist.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 50, minimalist.sass */
+/* line 57, minimalist.sass */
 h1 {
   font-size: 1.8em;
   line-height: 1.8em;
 }
-/* line 54, minimalist.sass */
+/* line 61, minimalist.sass */
 h1 a {
   color: inherit;
 }
 
-/* line 57, minimalist.sass */
+/* line 64, minimalist.sass */
 h2 {
   font-size: 1.5em;
   line-height: 1.5em;
 }
 
-/* line 61, minimalist.sass */
+/* line 68, minimalist.sass */
 h3 {
   font-size: 1.25em;
   line-height: 1.25em;
 }
 
-/* line 65, minimalist.sass */
+/* line 72, minimalist.sass */
 ol, ul {
   padding-left: 3em;
 }
 
-/* line 68, minimalist.sass */
+/* line 75, minimalist.sass */
 ol {
   list-style-type: decimal;
 }
-/* line 72, minimalist.sass */
+/* line 79, minimalist.sass */
 ol.entry-list li {
   margin-bottom: 0.2em;
 }
 
-/* line 75, minimalist.sass */
+/* line 82, minimalist.sass */
 ul {
   list-style-type: square;
 }
 
-/* line 78, minimalist.sass */
+/* line 85, minimalist.sass */
 time {
   color: #aaaaaa;
   margin-left: 0.5em;
 }
 
-/* line 83, minimalist.sass */
+/* line 90, minimalist.sass */
 .entry-content > * {
   margin: 1em 0;
 }
-/* line 86, minimalist.sass */
+/* line 93, minimalist.sass */
 .entry-content a {
   color: #006699;
 }
 
-/* line 89, minimalist.sass */
+/* line 96, minimalist.sass */
 .entry-tags {
   margin: 1em 0;
   padding-left: 0;
 }
-/* line 93, minimalist.sass */
+/* line 100, minimalist.sass */
 .entry-tags li {
   display: inline-block;
   margin-right: 0.2em;
 }
-/* line 97, minimalist.sass */
+/* line 104, minimalist.sass */
 .entry-tags li:first-child {
   margin-left: 0.2em;
 }
-/* line 100, minimalist.sass */
+/* line 107, minimalist.sass */
 .entry-tags li:not(:last-child):after {
   content: "/";
   margin-left: 0.2em;
 }
 
-/* line 104, minimalist.sass */
+/* line 111, minimalist.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 107, minimalist.sass */
+/* line 114, minimalist.sass */
 blockquote, em {
   font-style: italic;
 }
 
-/* line 111, minimalist.sass */
+/* line 118, minimalist.sass */
 pre {
   font-family: consolas, menlo, monaco, monospace;
   font-size: 0.8em;
