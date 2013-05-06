@@ -129,7 +129,7 @@ a:hover {
 /* line 57, minimalist.sass */
 h1 {
   font-size: 1.8em;
-  line-height: 1.8em;
+  line-height: 1.2em;
 }
 /* line 61, minimalist.sass */
 h1 a {
@@ -139,13 +139,13 @@ h1 a {
 /* line 64, minimalist.sass */
 h2 {
   font-size: 1.5em;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 
 /* line 68, minimalist.sass */
 h3 {
   font-size: 1.25em;
-  line-height: 1.25em;
+  line-height: 1.2em;
 }
 
 /* line 72, minimalist.sass */
@@ -212,11 +212,21 @@ blockquote, em {
   font-style: italic;
 }
 
-/* line 118, minimalist.sass */
+/* line 117, minimalist.sass */
+code {
+  font-family: consolas, menlo, monaco, monospace;
+  font-size: 0.9em;
+}
+
+/* line 122, minimalist.sass */
 pre {
   font-family: consolas, menlo, monaco, monospace;
   font-size: 0.8em;
   background-color: #fdf6e3;
   border: 1px solid #fae7b3;
   overflow: auto;
+}
+/* line 129, minimalist.sass */
+pre code {
+  font-size: inherit;
 }

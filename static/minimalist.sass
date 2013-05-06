@@ -56,18 +56,18 @@ a
 
 h1
   font-size: 1.8em
-  line-height: 1.8em
+  line-height: 1.2em
 
   a
     color: inherit
 
 h2
   font-size: 1.5em
-  line-height: 1.5em
+  line-height: 1.2em
 
 h3
   font-size: 1.25em
-  line-height: 1.25em
+  line-height: 1.2em
 
 ol, ul
   padding-left: 3em
@@ -114,6 +114,10 @@ strong
 blockquote, em
   font-style: italic
 
+code
+  font-family: consolas, menlo, monaco, monospace
+  font-size: .9em
+
 $code_block_bg: #FDF6E3
 pre
   font-family: consolas, menlo, monaco, monospace
@@ -121,3 +125,6 @@ pre
   background-color: $code_block_bg
   border: 1px solid darken($code_block_bg, 10%)
   overflow: auto
+
+  code
+    font-size: inherit
