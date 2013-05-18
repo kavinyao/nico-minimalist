@@ -33,10 +33,6 @@ html(lang='en')
             .navigation(role='navigation')
                 h1.home
                     a(href='#{content_url("index.html")}') #{config.sitename}
-                //- TODO: hard-coded
-                ul.pages
-                    li
-                        a(href='#{content_url("about/")}') About
 
             .document
                 block document
@@ -44,6 +40,8 @@ html(lang='en')
         .footer
             p.copyright
                 span &copy; 2013 #{config.author}
+                span
+                    a.about-link(href='#{content_url("about/")}') About
                 span Powered by 
                     a(href='#{system.homepage}') #{system.name}
                 span on 
