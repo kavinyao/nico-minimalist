@@ -67,28 +67,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   background-color: #fafafa;
   color: #555555;
-  font-family: "Georgia", "Times New Roman", "Songti SC", "STSong", serif;
-  font-size: 17px;
-  line-height: 24px;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "STHeiti", "STXihei", "SimHei", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
 }
-/* line 16, minimalist.sass */
+/* line 18, minimalist.sass */
 body > .wrapper {
   width: 700px;
   margin: 0 auto;
   padding: 20px;
 }
-/* line 22, minimalist.sass */
+/* line 24, minimalist.sass */
 body .navigation .home {
   font-size: 2.5em;
   line-height: 1.5em;
 }
-/* line 26, minimalist.sass */
+/* line 28, minimalist.sass */
 body .navigation .pages {
   list-style-type: none;
   padding-left: 0;
   color: #888888;
 }
-/* line 31, minimalist.sass */
+/* line 33, minimalist.sass */
 body > .footer {
   width: 700px;
   margin: 0 auto;
@@ -97,18 +98,18 @@ body > .footer {
   font-size: 0.8em;
   color: #888888;
 }
-/* line 39, minimalist.sass */
+/* line 41, minimalist.sass */
 body > .footer span {
   margin-right: 0.5em;
 }
-/* line 41, minimalist.sass */
+/* line 43, minimalist.sass */
 body > .footer span:not(:last-child):after {
   content: "|";
   margin-left: 0.5em;
 }
 
 @media screen and (max-width: 960px) {
-  /* line 47, minimalist.sass */
+  /* line 49, minimalist.sass */
   body > .wrapper, body > .footer {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -116,109 +117,109 @@ body > .footer span:not(:last-child):after {
     width: 100%;
   }
 }
-/* line 51, minimalist.sass */
+/* line 53, minimalist.sass */
 a {
   text-decoration: none;
   color: inherit;
 }
-/* line 54, minimalist.sass */
+/* line 56, minimalist.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 57, minimalist.sass */
+/* line 59, minimalist.sass */
 h1 {
   font-size: 1.8em;
   line-height: 1.2em;
 }
-/* line 61, minimalist.sass */
+/* line 63, minimalist.sass */
 h1 a {
   color: inherit;
 }
 
-/* line 64, minimalist.sass */
+/* line 66, minimalist.sass */
 h2 {
   font-size: 1.5em;
   line-height: 1.2em;
 }
 
-/* line 68, minimalist.sass */
+/* line 70, minimalist.sass */
 h3 {
   font-size: 1.25em;
   line-height: 1.2em;
 }
 
-/* line 72, minimalist.sass */
+/* line 74, minimalist.sass */
 ol, ul {
   padding-left: 3em;
 }
 
-/* line 75, minimalist.sass */
+/* line 77, minimalist.sass */
 ol {
   list-style-type: decimal;
 }
-/* line 79, minimalist.sass */
+/* line 81, minimalist.sass */
 ol.entry-list li {
   margin-bottom: 0.2em;
 }
 
-/* line 82, minimalist.sass */
+/* line 84, minimalist.sass */
 ul {
   list-style-type: square;
 }
 
-/* line 85, minimalist.sass */
+/* line 87, minimalist.sass */
 time {
   color: #aaaaaa;
   margin-left: 0.5em;
 }
 
-/* line 90, minimalist.sass */
+/* line 92, minimalist.sass */
 .entry-content > * {
   margin: 1em 0;
 }
-/* line 93, minimalist.sass */
+/* line 95, minimalist.sass */
 .entry-content a {
   color: #006699;
 }
 
-/* line 96, minimalist.sass */
+/* line 98, minimalist.sass */
 .entry-tags {
   margin: 1em 0;
   padding-left: 0;
 }
-/* line 100, minimalist.sass */
+/* line 102, minimalist.sass */
 .entry-tags li {
   display: inline-block;
   margin-right: 0.2em;
 }
-/* line 104, minimalist.sass */
+/* line 106, minimalist.sass */
 .entry-tags li:first-child {
   margin-left: 0.2em;
 }
-/* line 107, minimalist.sass */
+/* line 109, minimalist.sass */
 .entry-tags li:not(:last-child):after {
   content: "/";
   margin-left: 0.2em;
 }
 
-/* line 111, minimalist.sass */
+/* line 113, minimalist.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 114, minimalist.sass */
+/* line 116, minimalist.sass */
 blockquote, em {
   font-style: italic;
 }
 
-/* line 117, minimalist.sass */
+/* line 119, minimalist.sass */
 code {
   font-family: consolas, menlo, monaco, monospace;
   font-size: 0.9em;
 }
 
-/* line 122, minimalist.sass */
+/* line 124, minimalist.sass */
 pre {
   font-family: consolas, menlo, monaco, monospace;
   font-size: 0.8em;
@@ -226,7 +227,7 @@ pre {
   border: 1px solid #fae7b3;
   overflow: auto;
 }
-/* line 129, minimalist.sass */
+/* line 131, minimalist.sass */
 pre code {
   font-size: inherit;
 }
