@@ -1,6 +1,7 @@
 @import "compass/reset"
 @import "compass/css3/box-sizing"
 
+$gray: #aaa
 $width: 700px
 $black: #555
 $minor_black: #888
@@ -74,18 +75,19 @@ h3
 ol, ul
   padding-left: 3em
 
+ol.entry-list
+  padding-left: 0em
+
+  li
+    margin-bottom: .2em
+
 ol
   list-style-type: decimal
-
-  &.entry-list
-    li
-      margin-bottom: .2em
-
 ul
   list-style-type: square
 
 time
-  color: #aaa
+  color: $gray
   margin-left: .5em
 
 .entry-content
@@ -96,7 +98,7 @@ time
     color: $link_color
 
 .eof
-  color: #aaa
+  color: $gray
 
 .entry-tags
   margin: 1em 0
