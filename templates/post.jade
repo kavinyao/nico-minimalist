@@ -17,6 +17,9 @@ block document
         article.entry-content
             != post.html
 
+        p.eof
+            abbr(title='End of File') -EOF-
+
         if (post.tags.length)
             ul.entry-tags Tags:
                 for tag in post.tags
