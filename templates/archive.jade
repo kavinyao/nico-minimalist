@@ -1,10 +1,10 @@
 extends layout
 
 block title
-    = pagination.title
+    = config.sitename
 
 block document
-    h1.entry-title #{pagination.title}
+    h1.entry-title Posts
 
     ol.entry-list
         //- set posts in anti-chronological order
