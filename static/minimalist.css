@@ -228,11 +228,12 @@ code {
 pre {
   font-family: consolas, menlo, monaco, monospace;
   font-size: 0.8em;
+  line-height: 22px;
   background-color: #fdf6e3;
   border: 1px solid #fae7b3;
   overflow: auto;
 }
-/* line 132, minimalist.sass */
+/* line 133, minimalist.sass */
 pre code {
   font-size: inherit;
 }
