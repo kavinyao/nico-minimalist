@@ -1,7 +1,7 @@
 @import "compass/reset"
 @import "compass/css3/box-sizing"
 
-$gray: #aaa
+$grey: #aaa
 $width: 700px
 $black: #555
 $minor_black: #888
@@ -83,7 +83,7 @@ ul
   list-style-type: square
 
 time
-  color: $gray
+  color: $grey
   margin-left: .5em
 
 .entry-content
@@ -94,7 +94,7 @@ time
     color: $link_color
 
 .eof
-  color: $gray
+  color: $grey
 
 .entry-tags
   margin: 1em 0
@@ -116,6 +116,10 @@ strong
 
 blockquote, em
   font-style: italic
+
+blockquote
+  padding-left: 10px
+  border-left: 4px solid lighten($grey, 10%)
 
 code
   font-family: consolas, menlo, monaco, monospace
