@@ -42,6 +42,9 @@ html(lang='en')
                 span &copy; 2013 #{config.author}
                 span
                     a.about-link(href='#{content_url("about/")}') About
+                if (config.license)
+                    span
+                        a(href=config.license_url) #{config.license}
                 span Powered by 
                     a(href='#{system.homepage}') #{system.name}
                     |  on 
