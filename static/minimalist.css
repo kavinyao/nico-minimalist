@@ -71,19 +71,20 @@ body {
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
+  min-width: 320px;
 }
-/* line 21, minimalist.sass */
+/* line 22, minimalist.sass */
 body > .wrapper {
   width: 700px;
   margin: 0 auto;
   padding: 20px;
 }
-/* line 27, minimalist.sass */
+/* line 28, minimalist.sass */
 body .navigation .home {
   font-size: 2.5em;
   line-height: 1.5em;
 }
-/* line 31, minimalist.sass */
+/* line 32, minimalist.sass */
 body > .footer {
   width: 700px;
   margin: 0 auto;
@@ -92,18 +93,18 @@ body > .footer {
   font-size: 0.8em;
   color: #888888;
 }
-/* line 39, minimalist.sass */
+/* line 40, minimalist.sass */
 body > .footer span {
   margin-right: 0.5em;
 }
-/* line 41, minimalist.sass */
+/* line 42, minimalist.sass */
 body > .footer span:not(:last-child):after {
   content: "|";
   margin-left: 0.5em;
 }
 
-@media screen and (max-width: 960px) {
-  /* line 47, minimalist.sass */
+@media screen and (max-width: 740px) {
+  /* line 48, minimalist.sass */
   body > .wrapper, body > .footer {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -111,126 +112,136 @@ body > .footer span:not(:last-child):after {
     width: 100%;
   }
 }
-/* line 51, minimalist.sass */
+@media screen and (max-width: 600px) {
+  /* line 54, minimalist.sass */
+  body > .footer span {
+    display: block;
+  }
+  /* line 56, minimalist.sass */
+  body > .footer span:not(:last-child):after {
+    content: "";
+  }
+}
+/* line 59, minimalist.sass */
 a {
   text-decoration: none;
   color: inherit;
 }
-/* line 54, minimalist.sass */
+/* line 62, minimalist.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 57, minimalist.sass */
+/* line 65, minimalist.sass */
 h1 {
   font-size: 1.8em;
   line-height: 1.2em;
 }
-/* line 61, minimalist.sass */
+/* line 69, minimalist.sass */
 h1 a {
   color: inherit;
 }
 
-/* line 64, minimalist.sass */
+/* line 72, minimalist.sass */
 h2 {
   font-size: 1.5em;
   line-height: 1.2em;
 }
 
-/* line 68, minimalist.sass */
+/* line 76, minimalist.sass */
 h3 {
   font-size: 1.25em;
   line-height: 1.2em;
 }
 
-/* line 72, minimalist.sass */
+/* line 80, minimalist.sass */
 ol, ul {
   padding-left: 3em;
 }
 
-/* line 75, minimalist.sass */
+/* line 83, minimalist.sass */
 ol.entry-list {
   list-style-type: none;
   padding-left: 0em;
 }
-/* line 79, minimalist.sass */
+/* line 87, minimalist.sass */
 ol.entry-list li {
   margin-bottom: 0.2em;
 }
 
-/* line 82, minimalist.sass */
+/* line 90, minimalist.sass */
 ol {
   list-style-type: decimal;
 }
 
-/* line 84, minimalist.sass */
+/* line 92, minimalist.sass */
 ul {
   list-style-type: square;
 }
 
-/* line 87, minimalist.sass */
+/* line 95, minimalist.sass */
 time {
   color: #aaaaaa;
   margin-left: 0.5em;
 }
 
-/* line 92, minimalist.sass */
+/* line 100, minimalist.sass */
 .entry-content > * {
   margin: 1em 0;
 }
-/* line 95, minimalist.sass */
+/* line 103, minimalist.sass */
 .entry-content a {
   color: #006699;
 }
 
-/* line 98, minimalist.sass */
+/* line 106, minimalist.sass */
 .eof {
   color: #aaaaaa;
 }
 
-/* line 101, minimalist.sass */
+/* line 109, minimalist.sass */
 .entry-tags {
   margin: 1em 0;
   padding-left: 0;
 }
-/* line 105, minimalist.sass */
+/* line 113, minimalist.sass */
 .entry-tags li {
   display: inline-block;
   margin-right: 0.2em;
 }
-/* line 109, minimalist.sass */
+/* line 117, minimalist.sass */
 .entry-tags li:first-child {
   margin-left: 0.2em;
 }
-/* line 112, minimalist.sass */
+/* line 120, minimalist.sass */
 .entry-tags li:not(:last-child):after {
   content: "/";
   margin-left: 0.2em;
 }
 
-/* line 116, minimalist.sass */
+/* line 124, minimalist.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 119, minimalist.sass */
+/* line 127, minimalist.sass */
 blockquote, em {
   font-style: italic;
 }
 
-/* line 122, minimalist.sass */
+/* line 130, minimalist.sass */
 blockquote {
   padding-left: 10px;
   border-left: 4px solid #c3c3c3;
 }
 
-/* line 126, minimalist.sass */
+/* line 134, minimalist.sass */
 code {
   font-family: consolas, menlo, monaco, monospace;
   font-size: 0.9em;
 }
 
-/* line 130, minimalist.sass */
+/* line 138, minimalist.sass */
 pre {
   font-family: consolas, menlo, monaco, monospace;
   font-size: 0.8em;
@@ -239,7 +250,7 @@ pre {
   color: #dddddd;
   overflow: auto;
 }
-/* line 138, minimalist.sass */
+/* line 146, minimalist.sass */
 pre code {
   font-size: inherit;
 }

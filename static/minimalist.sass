@@ -17,6 +17,7 @@ body
   font-weight: 300
   font-size: 20px
   line-height: 32px
+  min-width: 320px
 
   &>.wrapper
     width: $width
@@ -42,11 +43,18 @@ body
         content: '|'
         margin-left: .5em
 
-@media screen and (max-width: 960px)
+@media screen and (max-width: $width+40px)
   body
     &>.wrapper, &>.footer
       +box-sizing(border-box)
       width: 100%
+
+@media screen and (max-width: 600px)
+  body
+    &>.footer span
+      display: block
+      &:not(:last-child):after
+        content: ''
 
 a
   text-decoration: none
