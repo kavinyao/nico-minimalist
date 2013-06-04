@@ -6,6 +6,10 @@ html(lang='en')
         meta(name='theme', content='#{theme.name} #{theme.version}')
         meta(name='author', content='#{config.author}')
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        block description
+            if (config.description)
+                meta(name='description', content='#{config.description}')
+        block more_meta
         - var feed_path = config.feed_output || 'feed.xml'
         link(rel="alternate", type="application/atom+xml", title="Atom 0.3", href="/#{feed_path}")
 

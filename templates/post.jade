@@ -1,5 +1,12 @@
 extends layout
 
+block description
+    if (post.meta.description)
+        meta(name='description', content=post.meta.description)
+
+block more_meta
+    meta(name='keywords', content=post.tags.join(',').toLowerCase())
+
 block title
     = post.title
 
