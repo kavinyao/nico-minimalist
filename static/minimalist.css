@@ -168,80 +168,83 @@ ol.entry-list {
 ol.entry-list li {
   margin-bottom: 0.2em;
 }
-
 /* line 90, minimalist.sass */
+ol.entry-list time {
+  margin-left: 0.5em;
+}
+
+/* line 93, minimalist.sass */
 ol {
   list-style-type: decimal;
 }
 
-/* line 92, minimalist.sass */
+/* line 95, minimalist.sass */
 ul {
   list-style-type: square;
 }
 
-/* line 95, minimalist.sass */
+/* line 98, minimalist.sass */
 time {
-  margin-left: 0.5em;
   color: #aaaaaa;
 }
 
-/* line 100, minimalist.sass */
+/* line 102, minimalist.sass */
 .entry-content > * {
   margin: 1em 0;
 }
-/* line 103, minimalist.sass */
+/* line 105, minimalist.sass */
 .entry-content a {
   color: #006699;
 }
 
-/* line 106, minimalist.sass */
+/* line 108, minimalist.sass */
 .eof {
   color: #aaaaaa;
 }
 
-/* line 109, minimalist.sass */
+/* line 111, minimalist.sass */
 .entry-tags {
   margin: 1em 0;
   padding-left: 0;
 }
-/* line 113, minimalist.sass */
+/* line 115, minimalist.sass */
 .entry-tags li {
   display: inline-block;
   margin-right: 0.2em;
 }
-/* line 117, minimalist.sass */
+/* line 119, minimalist.sass */
 .entry-tags li:first-child {
   margin-left: 0.2em;
 }
-/* line 120, minimalist.sass */
+/* line 122, minimalist.sass */
 .entry-tags li:not(:last-child):after {
   content: "/";
   margin-left: 0.2em;
 }
 
-/* line 124, minimalist.sass */
+/* line 126, minimalist.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 127, minimalist.sass */
+/* line 129, minimalist.sass */
 blockquote, em {
   font-style: italic;
 }
 
-/* line 130, minimalist.sass */
+/* line 132, minimalist.sass */
 blockquote {
   padding-left: 10px;
   border-left: 4px solid #c3c3c3;
 }
 
-/* line 134, minimalist.sass */
+/* line 136, minimalist.sass */
 code {
   font-family: consolas, menlo, monaco, monospace;
   font-size: 0.9em;
 }
 
-/* line 138, minimalist.sass */
+/* line 140, minimalist.sass */
 pre {
   font-family: consolas, menlo, monaco, monospace;
   font-size: 0.8em;
@@ -250,7 +253,7 @@ pre {
   color: #dddddd;
   overflow: auto;
 }
-/* line 146, minimalist.sass */
+/* line 148, minimalist.sass */
 pre code {
   font-size: inherit;
 }
