@@ -21,7 +21,7 @@ html(lang='en')
         link(rel='stylesheet', href='#{static_url("syntax.css")}')
 
         if (config.ga)
-            script
+            script.
                 var _gaq = _gaq || [];
                 _gaq.push(['_setAccount', '#{config.ga}']);
                 _gaq.push(['_trackPageview']);

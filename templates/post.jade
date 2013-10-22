@@ -37,7 +37,7 @@ block document
 
 block body_bottom
     if (!post.meta.comment && config.disqus)
-        script
+        script.
             var disqus_shortname = '#{config.disqus}';
             var disqus_script = 'embed.js';
             (function () {
