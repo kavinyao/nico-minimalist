@@ -6,6 +6,13 @@ block description
 
 block more_meta
     meta(name='keywords', content=post.tags.join(',').toLowerCase())
+    if (config.twitter)
+        meta(name='twitter:card', content='summary')
+        meta(name='twitter:creator', content='@#{config.twitter}')
+    meta(property='og:url', content=content_url(config.siteurl, permalink_url(post)))
+    meta(property='og:title', content=post.title)
+    - var og_description = post.meta.description || 'A post by ' + config.author + ' with <3.'
+    meta(property='og:description', content=og_description)
 
 block title
     = post.title
