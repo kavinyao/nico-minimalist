@@ -9,10 +9,10 @@ block more_meta
     if (config.twitter)
         meta(name='twitter:card', content='summary')
         meta(name='twitter:creator', content='@#{config.twitter}')
-    meta(property='og:url', content=absolute_url(config.siteurl, post))
-    meta(property='og:title', content=post.title)
-    - var og_description = post.meta.description || 'A post by ' + config.author + ' with <3.'
-    meta(property='og:description', content=og_description)
+        meta(name='twitter:url', content=absolute_url(config.siteurl, post))
+        meta(name='twitter:title', content=post.title)
+        - var card_description = post.meta.description || 'A post by ' + config.author + ' with <3.'
+        meta(name='twitter:description', content=card_description)
 
 block title
     = post.title
